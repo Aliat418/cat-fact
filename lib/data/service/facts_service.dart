@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 
 import '../../infrastructure/constants.dart';
 
-import '../model/fact/fact_model.dart';
+import '../../model/fact/fact.dart';
 
 part 'facts_service.g.dart';
 
@@ -17,5 +17,5 @@ abstract class FactService {
   ) = _FactService;
 
   @GET(kFacts)
-  Future<List<FactModel>> getFacts();
+  Future<List<Fact>> getFacts();
 }

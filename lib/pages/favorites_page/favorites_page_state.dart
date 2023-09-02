@@ -1,7 +1,7 @@
 part of 'favorites_page_cubit.dart';
 
 class FavoritesPageState extends BaseState {
-  final List<FavoriteFactModel> favoriteFacts;
+  final List<FavoriteFact> favoriteFacts;
 
   const FavoritesPageState({
     this.favoriteFacts = const [],
@@ -13,7 +13,7 @@ class FavoritesPageState extends BaseState {
   FavoritesPageState copyWith({
     PageStatus? status,
     Exception? error,
-    List<FavoriteFactModel>? favoriteFacts,
+    List<FavoriteFact>? favoriteFacts,
   }) {
     return FavoritesPageState(
       status: status ?? this.status,

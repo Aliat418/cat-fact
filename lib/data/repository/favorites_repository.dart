@@ -1,10 +1,10 @@
 import 'package:injectable/injectable.dart';
 
 import '../data_source/local_data_source.dart';
-import '../model/favorite_fact/favorite_fact_model.dart';
+import '../../model/favorite_fact/favorite_fact.dart';
 
 abstract class LocalRepository {
-  Future<List<FavoriteFactModel>> getFacts();
+  Future<List<FavoriteFact>> getFacts();
 
   Future<bool> saveFact({
     required String text,
@@ -21,7 +21,7 @@ class LocalFactRepository extends LocalRepository {
   }) : _localDataSource = localDataSource;
 
   @override
-  Future<List<FavoriteFactModel>> getFacts() async {
+  Future<List<FavoriteFact>> getFacts() async {
     return _localDataSource.getFacts();
   }
 
@@ -30,7 +30,7 @@ class LocalFactRepository extends LocalRepository {
     required String text,
     required String createdAt,
   }) async {
-    final fact = FavoriteFactModel(
+    final fact = FavoriteFact(
       text: text,
       createdAt: createdAt,
     );

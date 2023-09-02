@@ -6,7 +6,7 @@ import '../../utils/ext/build_context_ext.dart';
 
 import '../base/base_state.dart';
 import '../common_view/loader.dart';
-import '../common_view/sliver_app_bar.dart';
+import '../common_view/custom_sliver_app_bar.dart';
 
 import 'fact_page_cubit.dart';
 import 'view/custom_image_switcher.dart';

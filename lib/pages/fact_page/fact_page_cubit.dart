@@ -1,7 +1,7 @@
 import 'package:injectable/injectable.dart';
 
 import '../../data/repository/favorites_repository.dart';
-import '../../data/model/fact/fact_model.dart';
+import '../../model/fact/fact.dart';
 import '../../data/repository/facts_repository.dart';
 import '../../infrastructure/constants.dart';
 import '../../utils/url_time_stamp.dart';

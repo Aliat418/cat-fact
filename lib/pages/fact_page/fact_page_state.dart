@@ -1,7 +1,7 @@
 part of 'fact_page_cubit.dart';
 
 class FactPageState extends BaseState {
-  final FactModel? fact;
+  final Fact? fact;
   final String? formattedDate;
   final String? imageCurrentUrl;
 
@@ -17,7 +17,7 @@ class FactPageState extends BaseState {
   FactPageState copyWith({
     PageStatus? status,
     Exception? error,
-    FactModel? fact,
+    Fact? fact,
     String? formattedDate,
     String? imageCurrentUrl,
   }) {

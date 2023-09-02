@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
 
-import '../../data/model/favorite_fact/favorite_fact_model.dart';
+import '../../model/favorite_fact/favorite_fact.dart';
 import '../../data/repository/favorites_repository.dart';
 
 import '../base/base_cubit.dart';

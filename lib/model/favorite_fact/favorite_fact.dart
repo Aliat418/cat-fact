@@ -1,16 +1,16 @@
 import 'package:hive/hive.dart';
 
-part 'favorite_fact_model.g.dart';
+part 'favorite_fact.g.dart';
 
 @HiveType(typeId: 0)
-class FavoriteFactModel extends HiveObject {
+class FavoriteFact extends HiveObject {
   @HiveField(0)
   final String text;
 
   @HiveField(1)
   final String createdAt;
 
-  FavoriteFactModel({
+  FavoriteFact({
     required this.text,
     required this.createdAt,
   });
