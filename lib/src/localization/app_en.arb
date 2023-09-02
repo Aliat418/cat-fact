@@ -1,0 +1,9 @@
+{
+    "@@locale": "en",
+    "appName": "catfact",
+    "catDailyInfo":"Cat Daily Info",
+    "anotherFact": "Get Cat Fact",
+    "emptyString": "",
+    "favoriteFacts": "Favorite Facts",
+    "addToFavorites":  "Add To Favorites"
+}
